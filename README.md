@@ -22,3 +22,4 @@ Useful / Fun Links:
 * http://start.spring.io/
 * https://www.reactivesummit.org/2016
 * https://github.com/thymeleaf/thymeleafsandbox-biglist-reactive
+* https://github.com/reactor/lite-rx-api-hands-on/
