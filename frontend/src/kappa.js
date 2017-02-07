@@ -54,7 +54,7 @@ const Kappa = React.createClass({
     render() {
         return (
             <div>
-                <img src={kappaImg} className="Kappa" style={{width: this.state.activeImgWidth}}/>
+                <img src={kappaImg} alt="Kappa" className="Kappa" style={{width: this.state.activeImgWidth}}/>
             </div>
         );
     }

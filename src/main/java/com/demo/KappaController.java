@@ -1,5 +1,6 @@
 package com.demo;
 
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 import reactor.core.publisher.Flux;
@@ -12,6 +13,7 @@ public class KappaController {
      * Flux basically sets up a publish stream over the kappa route
      * This adheres to the reactive stream spec
      * */
+    @CrossOrigin(origins = "*")
     @GetMapping("/kappa")
     public Flux<Double> getKappas() {
         return genRandomKappaStream();
@@ -24,8 +26,8 @@ public class KappaController {
      *
      */
     private Flux<Double> genRandomKappaStream() {
-        return Flux.range(1, 10)
-                .delayMillis(500)
+        return Flux.range(1, 1000)
+                .delayMillis(300)
                 .map(i -> Math.random());
     }
 
