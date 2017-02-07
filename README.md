@@ -7,4 +7,18 @@ This is a simple app that uses reactive spring web to create a random stream of 
 
 The client can render something each time a new item in the stream is received. In our case Kappa's!
 
-Turns out experimental really is just that, the netty server doesn't want to spin up currently.
+To run server
+
+`mvn spring-boot:run -Drun.profiles=tomcat`
+
+_Netty Servlet was having some issues_
+
+To run client
+
+`cd frontend` run `npm install` then `npm start`
+
+
+Useful / Fun Links:
+* http://start.spring.io/
+* https://www.reactivesummit.org/2016
+* https://github.com/thymeleaf/thymeleafsandbox-biglist-reactive
